@@ -1,0 +1,20 @@
+<Chart Size="400, 400" BorderlineColor="Black" BorderlineDashStyle="Solid">
+  <Series>
+    <Series Name="Series1" Legend="Legend1" XValueType="String" YValueType="Double" ChartType="Bar" ChartArea="ChartArea1" IsValueShownAsLabel="True" Color="Red" CustomProperties="PointWidth=0.6">
+    </Series>
+  </Series>
+  <Legends>
+    <Legend Name="Legend1">
+    </Legend>
+  </Legends>
+  <Titles>
+    <Title Name="Title1" Text="请先绑定数据" BorderDashStyle="NotSet">
+    </Title>
+  </Titles>
+  <ChartAreas>
+    <ChartArea Name="ChartArea1">
+      <AxisX Interval="1">
+      </AxisX>
+    </ChartArea>
+  </ChartAreas>
+</Chart>

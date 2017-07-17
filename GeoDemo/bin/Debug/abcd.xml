@@ -1,0 +1,36 @@
+<Chart Size="400, 400" BorderlineColor="Black" BorderlineDashStyle="Solid">
+  <Series>
+    <Series Name="Series1" Legend="Legend1" XValueType="String" YValueType="Double" ChartType="Bar" ChartArea="ChartArea1" IsValueShownAsLabel="True" Color="Red" CustomProperties="PointWidth=0.6">
+      <Points>
+        <DataPoint YValues="200" AxisLabel="200401" />
+        <DataPoint YValues="212.1" AxisLabel="200501" />
+        <DataPoint YValues="77.54" AxisLabel="200601" />
+        <DataPoint YValues="110.3" AxisLabel="200701" />
+        <DataPoint YValues="222.32" AxisLabel="200801" />
+        <DataPoint YValues="440.22" AxisLabel="200901" />
+        <DataPoint YValues="77.21" AxisLabel="201001" />
+        <DataPoint YValues="214.44" AxisLabel="201101" />
+        <DataPoint YValues="30.32" AxisLabel="201201" />
+        <DataPoint YValues="120.43" AxisLabel="201301" />
+        <DataPoint YValues="432.32" AxisLabel="201401" />
+        <DataPoint YValues="222.22" AxisLabel="201501" />
+      </Points>
+    </Series>
+  </Series>
+  <Legends>
+    <Legend Name="Legend1">
+    </Legend>
+  </Legends>
+  <Titles>
+    <Title Name="Title1" Text="双击图形在属性中修改主标题" BorderDashStyle="NotSet">
+    </Title>
+  </Titles>
+  <ChartAreas>
+    <ChartArea Name="ChartArea1">
+      <AxisY Title="Y2轴">
+      </AxisY>
+      <AxisX Title="X轴" Interval="1">
+      </AxisX>
+    </ChartArea>
+  </ChartAreas>
+</Chart>

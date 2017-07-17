@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{717CAA92-DD72-4A0F-828D-C2B446B8AD94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDemo</RootNamespace>
+    <AssemblyName>GeoDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>E:\MyStudio\execute\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ymhdob, Version=1.0.5671.14571, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\MyStudio\execute\Ymhdob.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddorDelSerise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddorDelSerise.Designer.cs">
+      <DependentUpon>AddorDelSerise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C-M1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C-M1.designer.cs">
+      <DependentUpon>C-M1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C-M2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C-M2.designer.cs">
+      <DependentUpon>C-M2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurvesOfSelectWell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurvesOfSelectWell.Designer.cs">
+      <DependentUpon>CurvesOfSelectWell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForSanDuanYuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForSanDuanYuan.Designer.cs">
+      <DependentUpon>DataForSanDuanYuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewAutoFilterColumnHeaderCell.cs" />
+    <Compile Include="DataGridViewAutoFilterTextBoxColumn.cs" />
+    <Compile Include="DataUnknow_OilWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUnknow_OilWater.designer.cs">
+      <DependentUpon>DataUnknow_OilWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Granularity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data_Granularity.designer.cs">
+      <DependentUpon>Data_Granularity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Special.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data_Special.designer.cs">
+      <DependentUpon>Data_Special.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data_WellLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data_WellLog.designer.cs">
+      <DependentUpon>Data_WellLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawChart.cs" />
+    <Compile Include="LinkageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkageFrm.Designer.cs">
+      <DependentUpon>LinkageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenInfoFromDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenInfoFromDB.Designer.cs">
+      <DependentUpon>OpenInfoFromDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenTempFromDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenTempFromDB.Designer.cs">
+      <DependentUpon>OpenTempFromDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormState.cs" />
+    <Compile Include="Grabularity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grabularity.designer.cs">
+      <DependentUpon>Grabularity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MouseEvent.cs" />
+    <Compile Include="MyObject.cs" />
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OilWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OilWater.designer.cs">
+      <DependentUpon>OilWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OilWaterColorSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OilWaterColorSelect.designer.cs">
+      <DependentUpon>OilWaterColorSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OilWaterDataSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OilWaterDataSet.designer.cs">
+      <DependentUpon>OilWaterDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oilwater_Data.cs" />
+    <Compile Include="ReadData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadData.designer.cs">
+      <DependentUpon>ReadData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadData4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadData4.designer.cs">
+      <DependentUpon>ReadData4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveAsTemp2DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveAsTemp2DB.Designer.cs">
+      <DependentUpon>SaveAsTemp2DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadDataFromDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadDataFromDataBase.Designer.cs">
+      <DependentUpon>ReadDataFromDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadDataFromDatatable.cs" />
+    <Compile Include="SadhuCauses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SadhuCauses.designer.cs">
+      <DependentUpon>SadhuCauses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveAttribute.cs" />
+    <Compile Include="SaveChart.cs" />
+    <Compile Include="Savelocation.cs" />
+    <Compile Include="SavePictrue.cs" />
+    <Compile Include="SetDiJianQuXianProperity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetDiJianQuXianProperity.Designer.cs">
+      <DependentUpon>SetDiJianQuXianProperity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setofline_cm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setofline_cm1.designer.cs">
+      <DependentUpon>Setofline_cm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setofline_cm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setofline_cm2.designer.cs">
+      <DependentUpon>Setofline_cm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setofline_grabularity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setofline_grabularity.designer.cs">
+      <DependentUpon>Setofline_grabularity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setofline_oilwater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setofline_oilwater.designer.cs">
+      <DependentUpon>Setofline_oilwater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setofline_sahu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setofline_sahu.designer.cs">
+      <DependentUpon>Setofline_sahu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setofline_welllog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setofline_welllog.designer.cs">
+      <DependentUpon>Setofline_welllog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setofline_wLogMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setofline_wLogMain.designer.cs">
+      <DependentUpon>Setofline_wLogMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetProperty.Designer.cs">
+      <DependentUpon>SetProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetProperty2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetProperty2.Designer.cs">
+      <DependentUpon>SetProperty2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetShengChanKaiFaQuXianProperity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetShengChanKaiFaQuXianProperity.Designer.cs">
+      <DependentUpon>SetShengChanKaiFaQuXianProperity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetXiangshenQuXianProperity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetXiangshenQuXianProperity.Designer.cs">
+      <DependentUpon>SetXiangshenQuXianProperity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysData.cs" />
+    <Compile Include="ToOperateTheChart.cs" />
+    <Compile Include="Way_DataLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Way_DataLoad.Designer.cs">
+      <DependentUpon>Way_DataLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellLog.designer.cs">
+      <DependentUpon>WellLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellLog_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellLog_Main.designer.cs">
+      <DependentUpon>WellLog_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Well_DataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Well_DataBase.Designer.cs">
+      <DependentUpon>Well_DataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xml2Byte.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="ReadData3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadData3.Designer.cs">
+      <DependentUpon>ReadData3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanHanLiChenJiWu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanHanLiChenJiWu.designer.cs">
+      <DependentUpon>SanHanLiChenJiWu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanYanShiSanDuanYuan1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanYanShiSanDuanYuan1.designer.cs">
+      <DependentUpon>SanYanShiSanDuanYuan1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanYanShiSanDuanYuan3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanYanShiSanDuanYuan3.designer.cs">
+      <DependentUpon>SanYanShiSanDuanYuan3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanYanShiSanDuanYuan2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanYanShiSanDuanYuan2.designer.cs">
+      <DependentUpon>SanYanShiSanDuanYuan2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanYanShiFenLeiTwo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanYanShiFenLeiTwo1.designer.cs">
+      <DependentUpon>SanYanShiFenLeiTwo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanYanShiFenLeiTwo3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanYanShiFenLeiTwo3.designer.cs">
+      <DependentUpon>SanYanShiFenLeiTwo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanYanShiFenLeiTwo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanYanShiFenLeiTwo2.designer.cs">
+      <DependentUpon>SanYanShiFenLeiTwo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanWuLiChenJiWu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanWuLiChenJiWu.designer.cs">
+      <DependentUpon>SanWuLiChenJiWu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanXianDaiChenDianWuShepard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanXianDaiChenDianWuShepard.designer.cs">
+      <DependentUpon>SanXianDaiChenDianWuShepard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadDataAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadDataAll.designer.cs">
+      <DependentUpon>ReadDataAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadData2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadData2.Designer.cs">
+      <DependentUpon>ReadData2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddorDelSerise.resx">
+      <DependentUpon>AddorDelSerise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C-M1.resx">
+      <DependentUpon>C-M1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C-M2.resx">
+      <DependentUpon>C-M2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurvesOfSelectWell.resx">
+      <DependentUpon>CurvesOfSelectWell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForSanDuanYuan.resx">
+      <DependentUpon>DataForSanDuanYuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUnknow_OilWater.resx">
+      <DependentUpon>DataUnknow_OilWater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data_Granularity.resx">
+      <DependentUpon>Data_Granularity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data_Special.resx">
+      <DependentUpon>Data_Special.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data_WellLog.resx">
+      <DependentUpon>Data_WellLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkageFrm.resx">
+      <DependentUpon>LinkageFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenInfoFromDB.resx">
+      <DependentUpon>OpenInfoFromDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenTempFromDB.resx">
+      <DependentUpon>OpenTempFromDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grabularity.resx">
+      <DependentUpon>Grabularity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OilWater.resx">
+      <DependentUpon>OilWater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OilWaterColorSelect.resx">
+      <DependentUpon>OilWaterColorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OilWaterDataSet.resx">
+      <DependentUpon>OilWaterDataSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadData.resx">
+      <DependentUpon>ReadData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadData4.resx">
+      <DependentUpon>ReadData4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveAsTemp2DB.resx">
+      <DependentUpon>SaveAsTemp2DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReadDataFromDataBase.resx">
+      <DependentUpon>ReadDataFromDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SadhuCauses.resx">
+      <DependentUpon>SadhuCauses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetDiJianQuXianProperity.resx">
+      <DependentUpon>SetDiJianQuXianProperity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setofline_cm1.resx">
+      <DependentUpon>Setofline_cm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setofline_cm2.resx">
+      <DependentUpon>Setofline_cm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setofline_grabularity.resx">
+      <DependentUpon>Setofline_grabularity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setofline_oilwater.resx">
+      <DependentUpon>Setofline_oilwater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setofline_sahu.resx">
+      <DependentUpon>Setofline_sahu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setofline_welllog.resx">
+      <DependentUpon>Setofline_welllog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setofline_wLogMain.resx">
+      <DependentUpon>Setofline_wLogMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetProperty.resx">
+      <DependentUpon>SetProperty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetProperty2.resx">
+      <DependentUpon>SetProperty2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetShengChanKaiFaQuXianProperity.resx">
+      <DependentUpon>SetShengChanKaiFaQuXianProperity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetXiangshenQuXianProperity.resx">
+      <DependentUpon>SetXiangshenQuXianProperity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Way_DataLoad.resx">
+      <DependentUpon>Way_DataLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellLog.resx">
+      <DependentUpon>WellLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellLog_Main.resx">
+      <DependentUpon>WellLog_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadData3.resx">
+      <DependentUpon>ReadData3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanHanLiChenJiWu.resx">
+      <DependentUpon>SanHanLiChenJiWu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanYanShiSanDuanYuan1.resx">
+      <DependentUpon>SanYanShiSanDuanYuan1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanYanShiSanDuanYuan3.resx">
+      <DependentUpon>SanYanShiSanDuanYuan3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanYanShiSanDuanYuan2.resx">
+      <DependentUpon>SanYanShiSanDuanYuan2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanYanShiFenLeiTwo1.resx">
+      <DependentUpon>SanYanShiFenLeiTwo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanYanShiFenLeiTwo3.resx">
+      <DependentUpon>SanYanShiFenLeiTwo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanYanShiFenLeiTwo2.resx">
+      <DependentUpon>SanYanShiFenLeiTwo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanWuLiChenJiWu.resx">
+      <DependentUpon>SanWuLiChenJiWu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanXianDaiChenDianWuShepard.resx">
+      <DependentUpon>SanXianDaiChenDianWuShepard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadDataAll.resx">
+      <DependentUpon>ReadDataAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadData2.resx">
+      <DependentUpon>ReadData2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Well_DataBase.resx">
+      <DependentUpon>Well_DataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
